@@ -162,8 +162,7 @@ button:hover {
 
 @media (prefers-reduced-motion: no-preference) {
   .index .sticky {
-/*     animation: 0.5s infinite alternate heartbeat; */
-    animation: 1s 6s infinite heartbeat;
+    animation: 1s 12s infinite heartbeat;
   }
 
   .index .sticky:hover {
@@ -171,19 +170,13 @@ button:hover {
   }
 }
 
-/* @keyframes heartbeat {
-  from {
-    transform: scale(1.1);
-  }
-} */
-
 @keyframes heartbeat {
   20% {
     transform: scale(1);
   }
 
   40% {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 
   60% {
@@ -191,6 +184,6 @@ button:hover {
   }
 
   80% {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 }
