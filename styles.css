@@ -70,10 +70,8 @@ footer a {
 
 h1,
 h2 {
-  font-family: Impact, sans-serif;
+  font-family: "Rockwell Extra Bold", "Rockwell Bold", monospace;
   font-size: xx-large;
-  font-weight: normal;
-  letter-spacing: 0.05em;
   line-height: 1.3;
   text-align: center;
 }
