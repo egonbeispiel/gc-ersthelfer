@@ -29,15 +29,18 @@ body {
 
 body::after {
   border: 8px solid red;
+  bottom: 0;
   content: "";
   display: block;
-  inset: 0;
+  left: 0;
   pointer-events: none;
   position: fixed;
 }
 
 .final::after {
   border-color: green;
+  right: 0;
+  top: 0;
 }
 
 header {
