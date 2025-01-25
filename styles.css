@@ -74,6 +74,8 @@ h2 {
 }
 
 p {
+  hyphenate-limit-chars: auto 5;
+  hyphens: auto;
   margin-left: auto;
   margin-right: auto;
 }
