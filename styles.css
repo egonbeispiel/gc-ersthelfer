@@ -54,7 +54,7 @@ header .image {
   margin-bottom: -60px;
   margin-top: -90px;
   mix-blend-mode: luminosity;
-  opacity: 0.3;
+  opacity: 0.2;
   position: relative;
   z-index: -1;
 }
