@@ -134,8 +134,10 @@ button {
   transition: background-position 0.5s;
 }
 
-button:hover {
-  background-position: right center;
+@media (hover: hover) {
+  button:hover {
+    background-position: right center;
+  }
 }
 
 .image {
@@ -149,17 +151,17 @@ button:hover {
   display: inline flow-root;
 }
 
-.sticky {
+.always-visible {
   bottom: 2em;
   position: sticky;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .index .sticky {
+  .index button {
     animation: 1s 12s infinite heartbeat;
   }
 
-  .index .sticky:hover {
+  .index button:hover {
     animation-play-state: paused;
   }
 }
