@@ -8,7 +8,7 @@ body {
   color: black;
   display: flex;
   flex-direction: column;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: system-ui, sans-serif;
   font-size: 1.125em;
   letter-spacing: -0.01em;
   line-height: 1.5;
