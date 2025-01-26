@@ -98,10 +98,12 @@ form {
 }
 
 label {
+  color: darkorange;
   cursor: pointer;
   display: block;
   font-weight: bold;
-  text-align: center;
+  order: -1;
+  transition: color 0.2s;
 }
 
 input {
@@ -117,7 +119,15 @@ input {
 }
 
 input:invalid {
- outline-color: red;
+  outline-color: red;
+}
+
+input:invalid + label {
+  color: red;
+}
+
+input:invalid ~ button {
+  opacity: 0.5;
 }
 
 button {
@@ -132,8 +142,8 @@ button {
   font-weight: bold;
   line-height: 1.4;
   padding: 20px;
-  transition: background-position 0.5s;
   text-shadow: 0 0 60px black;
+  transition: background-position 0.5s, opacity 0.2s;
 }
 
 @media (hover: hover) {
