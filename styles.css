@@ -81,15 +81,18 @@ p {
 }
 
 ol {
-  list-style-position: inside;
+  counter-reset: custom;
+  list-style-type: none;
   padding: 0;
 }
 
 li {
+  counter-increment: custom;
   margin: 1em 0;
 }
 
-::marker {
+li::before {
+  content: counter(custom) ". ";
   font-weight: bold;
 }
 
