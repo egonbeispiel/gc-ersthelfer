@@ -12,7 +12,7 @@ body {
   font-size: 1.125em;
   letter-spacing: -0.01em;
   line-height: 1.5;
-  margin: 8px auto;
+  margin: 12px auto;
   max-width: 600px;
   min-height: 100vh;
   min-height: 100dvh;
@@ -32,10 +32,14 @@ body::after {
   top: 0;
 }
 
+header {
+  font-weight: bold;
+}
+
 header .image {
   margin: 0 0 -150px;
   mix-blend-mode: luminosity;
-  opacity: 0.2;
+  opacity: 0.15;
   position: relative;
   z-index: -1;
 }
@@ -51,7 +55,6 @@ main {
 
 footer {
   font-size: small;
-  padding: 15px 0;
   text-align: center;
 }
 
@@ -74,19 +77,21 @@ p {
 }
 
 ol {
-  counter-reset: custom;
-  list-style-type: none;
-  padding: 0;
+  padding: 0 8%;
 }
 
-li {
-  counter-increment: custom;
+ol > li {
   margin: 1em 0;
 }
 
-li::before {
-  content: counter(custom) ". ";
+ol > li::marker {
   font-weight: bold;
+}
+
+ul {
+  font-style: italic;
+  list-style: disc inside;
+  padding: 0;
 }
 
 img {
@@ -98,8 +103,8 @@ form {
   display: flex;
   flex-direction: column;
   gap: 1em;
-  margin: 2em auto;
-  width: 85%;
+  margin: 1em 0;
+  padding: 1em 8%;
 }
 
 label {
@@ -133,6 +138,7 @@ input:invalid + label {
 
 input:invalid ~ button {
   opacity: 0.5;
+  pointer-events: none;
 }
 
 button {
@@ -146,7 +152,7 @@ button {
   font-size: larger;
   font-weight: bold;
   line-height: 1.4;
-  padding: 20px;
+  padding: 18px;
   text-shadow: 0 0 60px black;
   transition: background-position 0.5s, opacity 0.2s;
 }
