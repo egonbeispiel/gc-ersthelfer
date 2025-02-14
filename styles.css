@@ -45,7 +45,8 @@ header .image {
 }
 
 header img {
-  clip-path: circle(47%);
+  clip-path: circle(48%);
+  height: 150px;
   width: 150px;
 }
 
