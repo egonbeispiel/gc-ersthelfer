@@ -3,8 +3,8 @@
 }
 
 body {
-  background-color: green;
-  background-image: linear-gradient(transparent 16px, white 300px);
+  background-color: limegreen;
+  background-image: linear-gradient(#fff5, white 300px);
   color: black;
   display: flex;
   flex-direction: column;
@@ -33,8 +33,7 @@ body::after {
 }
 
 header .image {
-  margin-bottom: -150px;
-  margin-top: 0;
+  margin: 0 0 -150px;
   mix-blend-mode: luminosity;
   opacity: 0.2;
   position: relative;
@@ -69,15 +68,9 @@ h2 {
   text-align: center;
 }
 
-h1 {
-  text-shadow: 0 0 120px white;
-}
-
 p {
   hyphenate-limit-chars: auto 5;
   hyphens: auto;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 ol {
