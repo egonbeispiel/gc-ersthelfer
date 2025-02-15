@@ -37,7 +37,8 @@ header {
 }
 
 header .image {
-  margin: 0 0 -150px;
+  margin-bottom: -150px;
+  margin-top: 0;
   mix-blend-mode: luminosity;
   opacity: 0.15;
   position: relative;
@@ -46,12 +47,20 @@ header .image {
 
 header img {
   clip-path: circle(48%);
-  height: 150px;
-  width: 150px;
 }
 
 main {
   flex-grow: 1;
+}
+
+main .image {
+  margin-left: -30px;
+  margin-right: -30px;
+}
+
+main .image img {
+  height: auto;
+  width: 100%;
 }
 
 footer {
@@ -95,26 +104,12 @@ ul {
   padding: 0;
 }
 
-img {
-  height: auto;
-  width: 100%;
-}
-
 form {
   display: flex;
   flex-direction: column;
   gap: 1em;
   margin: 1em 0;
   padding: 1em 8%;
-}
-
-label {
-  color: darkorange;
-  cursor: pointer;
-  display: block;
-  font-weight: bold;
-  order: -1;
-  transition: color 0.2s;
 }
 
 input {
@@ -133,11 +128,7 @@ input:invalid {
   outline-color: red;
 }
 
-input:invalid + label {
-  color: red;
-}
-
-input:invalid ~ button {
+input:invalid + button {
   opacity: 0.5;
   pointer-events: none;
 }
@@ -167,8 +158,6 @@ button {
 .image {
   display: flex;
   justify-content: center;
-  margin-left: -30px;
-  margin-right: -30px;
 }
 
 .nowrap {
