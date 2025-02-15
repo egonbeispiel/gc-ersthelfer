@@ -2,9 +2,14 @@
   navigation: auto;
 }
 
+html {
+  background-color: green;
+}
+
 body {
-  background-color: limegreen;
-  background-image: linear-gradient(#fff5, white 300px);
+  background-color: inherit;
+  background-image: linear-gradient(#77de77, white 300px);
+  box-sizing: border-box;
   color: black;
   display: flex;
   flex-direction: column;
@@ -12,12 +17,13 @@ body {
   font-size: 1.125em;
   letter-spacing: -0.01em;
   line-height: 1.5;
-  margin: 12px auto;
+  margin: 0 auto;
   max-width: 600px;
+  padding: 12px 30px;
+  text-wrap-style: pretty;
+
   min-height: 100vh;
   min-height: 100dvh;
-  padding: 0 30px;
-  text-wrap-style: pretty;
 }
 
 body::after {
@@ -34,6 +40,7 @@ body::after {
 
 header {
   font-weight: bold;
+  isolation: isolate;
 }
 
 header .image {
