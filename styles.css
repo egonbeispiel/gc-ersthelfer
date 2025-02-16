@@ -173,6 +173,7 @@ button {
 
 .always-visible {
   bottom: 2em;
+  position: -webkit-sticky;
   position: sticky;
 }
 
