@@ -131,10 +131,6 @@ input {
   transition: outline-color 0.2s;
 }
 
-input:invalid {
-  outline-color: red;
-}
-
 input:invalid + button {
   opacity: 0.5;
   pointer-events: none;
