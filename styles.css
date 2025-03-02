@@ -14,7 +14,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: system-ui, sans-serif;
-  font-size: 1.125em;
+  font-size: larger;
   letter-spacing: -0.01em;
   line-height: 1.5;
   margin: 0 auto;
@@ -71,7 +71,7 @@ main .image img {
 }
 
 footer {
-  font-size: small;
+  font-size: medium;
   text-align: center;
 }
 
