@@ -136,7 +136,7 @@ input:invalid {
 }
 
 input:invalid + button {
-  opacity: 0.5;
+  opacity: 0.3;
   pointer-events: none;
 }
 
